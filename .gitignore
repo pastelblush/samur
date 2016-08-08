@@ -1,0 +1,16 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!*.gitignore
+!*.pro
+!*.tsm
+!*.tpy
+!README.md
+!*.pdf
+!*.xlsx
+# etc...
+
+# ...even if they are in subdirectories
+!*/
