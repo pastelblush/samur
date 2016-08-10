@@ -4,7 +4,7 @@
 	<ProjectInfo>
 		<Path>C:\Users\Pastelblush\Projects\samur\samur_8_8_16.pro</Path>
 		<IsLibrary>false</IsLibrary>
-		<ChangeDate>2016-08-09T12:36:06</ChangeDate>
+		<ChangeDate>2016-08-10T18:01:58</ChangeDate>
 		<Library>
 			<Name>STANDARD.LIB</Name>
 			<Path>C:\TWINCAT\PLC\LIB\STANDARD.LIB</Path>
@@ -62,178 +62,210 @@
 	</DirectoryInfos>
 	<DataTypes>
 		<DataType>
-			<Name Decoration="1025C083" Crc32="0418806780" LastChange="2016-08-09T12:35:10">Flowchart_3_4_SingleButton</Name>
-			<BitSize>1080</BitSize>
+			<Name Decoration="1004E439" Crc32="1348675364" LastChange="2016-08-10T12:31:50">Flowchart_7</Name>
+			<BitSize>392</BitSize>
 			<SubItem>
-				<Name>bAHU1_Error</Name>
+				<Name>DEV1</Name>
+				<Type Decoration="100FBD54">AHU_INTERNAL</Type>
+				<BitSize>320</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Output">DCS_Occupied</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>320</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="InOut">Trigger</Name>
+				<Type Pointer="1">BOOL</Type>
+				<BitSize>32</BitSize>
+				<BitOffs>328</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="InOut">Latch</Name>
+				<Type Pointer="1">BOOL</Type>
+				<BitSize>32</BitSize>
+				<BitOffs>360</BitOffs>
+			</SubItem>
+			<FbInfo>
+				<CodeIndex>55</CodeIndex>
+				<InitIndex>56</InitIndex>
+			</FbInfo>
+		</DataType>
+		<DataType>
+			<Name Decoration="1029D58A" Crc32="3393840437" LastChange="2016-08-09T16:49:43">Flowchart_3_4_SingleButton</Name>
+			<BitSize>1112</BitSize>
+			<SubItem>
+				<Name Location="Input">bAHU1_Status</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
 				<BitOffs>0</BitOffs>
 			</SubItem>
 			<SubItem>
-				<Name>bAHU2_Error</Name>
+				<Name Location="Input">bAHU1_Trip</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
 				<BitOffs>8</BitOffs>
 			</SubItem>
 			<SubItem>
-				<Name Location="Input">bAHU1_Status</Name>
+				<Name Location="Output">bAHU1_Relay</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
 				<BitOffs>16</BitOffs>
 			</SubItem>
 			<SubItem>
-				<Name Location="Input">bAHU1_Trip</Name>
-				<Type>BOOL</Type>
-				<BitSize>8</BitSize>
-				<BitOffs>24</BitOffs>
-			</SubItem>
-			<SubItem>
-				<Name Location="Output">bAHU1_Relay</Name>
-				<Type>BOOL</Type>
-				<BitSize>8</BitSize>
-				<BitOffs>32</BitOffs>
-			</SubItem>
-			<SubItem>
 				<Name IsDefinedInLibrary="1" Library="C:\TWINCAT\PLC\LIB\STANDARD.LIB">Status_timer_1</Name>
 				<Type Decoration="10060D24">TON</Type>
 				<BitSize>120</BitSize>
-				<BitOffs>40</BitOffs>
+				<BitOffs>24</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name IsDefinedInLibrary="1" Library="C:\TWINCAT\PLC\LIB\STANDARD.LIB">Error_timer_1</Name>
 				<Type Decoration="10060D24">TOF</Type>
 				<BitSize>120</BitSize>
-				<BitOffs>160</BitOffs>
+				<BitOffs>144</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name IsDefinedInLibrary="1" Library="C:\TWINCAT\PLC\LIB\STANDARD.LIB">OnRtrigAHU1</Name>
 				<Type Decoration="1003051C">R_TRIG</Type>
 				<BitSize>24</BitSize>
-				<BitOffs>280</BitOffs>
+				<BitOffs>264</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name IsDefinedInLibrary="1" Library="C:\TWINCAT\PLC\LIB\STANDARD.LIB">OffRtrigAHU1</Name>
 				<Type Decoration="1003051C">R_TRIG</Type>
 				<BitSize>24</BitSize>
-				<BitOffs>304</BitOffs>
+				<BitOffs>288</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name Location="Input">bAHU2_Status</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
-				<BitOffs>328</BitOffs>
+				<BitOffs>312</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name Location="Input">bAHU2_Trip</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
-				<BitOffs>336</BitOffs>
+				<BitOffs>320</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name Location="Output">bAHU2_Relay</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
-				<BitOffs>344</BitOffs>
+				<BitOffs>328</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name IsDefinedInLibrary="1" Library="C:\TWINCAT\PLC\LIB\STANDARD.LIB">Status_timer_2</Name>
 				<Type Decoration="10060D24">TON</Type>
 				<BitSize>120</BitSize>
-				<BitOffs>352</BitOffs>
+				<BitOffs>336</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name IsDefinedInLibrary="1" Library="C:\TWINCAT\PLC\LIB\STANDARD.LIB">Error_timer_2</Name>
 				<Type Decoration="10060D24">TOF</Type>
 				<BitSize>120</BitSize>
-				<BitOffs>472</BitOffs>
+				<BitOffs>456</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name IsDefinedInLibrary="1" Library="C:\TWINCAT\PLC\LIB\STANDARD.LIB">OnRtrigAHU2</Name>
 				<Type Decoration="1003051C">R_TRIG</Type>
 				<BitSize>24</BitSize>
-				<BitOffs>592</BitOffs>
+				<BitOffs>576</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name IsDefinedInLibrary="1" Library="C:\TWINCAT\PLC\LIB\STANDARD.LIB">OffRtrigAHU2</Name>
 				<Type Decoration="1003051C">R_TRIG</Type>
 				<BitSize>24</BitSize>
-				<BitOffs>616</BitOffs>
+				<BitOffs>600</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name IsDefinedInLibrary="1" Library="C:\TWINCAT\PLC\LIB\STANDARD.LIB">AHU1_Reset</Name>
 				<Type Decoration="10060D24">TON</Type>
 				<BitSize>120</BitSize>
-				<BitOffs>640</BitOffs>
+				<BitOffs>624</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name IsDefinedInLibrary="1" Library="C:\TWINCAT\PLC\LIB\STANDARD.LIB">AHU2_Reset</Name>
 				<Type Decoration="10060D24">TON</Type>
 				<BitSize>120</BitSize>
-				<BitOffs>760</BitOffs>
+				<BitOffs>744</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name>_ImpVar_33_206</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
-				<BitOffs>880</BitOffs>
+				<BitOffs>864</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name>_ImpVar_33_24</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
-				<BitOffs>888</BitOffs>
+				<BitOffs>872</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name>_ImpVar_33_8</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
-				<BitOffs>896</BitOffs>
+				<BitOffs>880</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name>_ImpVar_33_14</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
-				<BitOffs>904</BitOffs>
+				<BitOffs>888</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name>_ImpVar_33_65</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
-				<BitOffs>912</BitOffs>
+				<BitOffs>896</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name>_ImpVar_33_111</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
-				<BitOffs>920</BitOffs>
+				<BitOffs>904</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name>_ImpVar_33_127</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
-				<BitOffs>928</BitOffs>
+				<BitOffs>912</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name>_ImpVar_33_132</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
-				<BitOffs>936</BitOffs>
+				<BitOffs>920</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name>_ImpVar_33_137</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
-				<BitOffs>944</BitOffs>
+				<BitOffs>928</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name>_ImpVar_33_152</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
-				<BitOffs>952</BitOffs>
+				<BitOffs>936</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name>_ImpVar_33_156</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>944</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>_ImpVar_33_213</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>952</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>_ImpVar_33_218</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
 				<BitOffs>960</BitOffs>
@@ -257,38 +289,456 @@
 				<BitOffs>984</BitOffs>
 			</SubItem>
 			<SubItem>
-				<Name Location="Output" FbParameter="Output">AHU2_DcsOccupied</Name>
+				<Name FbParameter="Output">bAHU1_Error</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
 				<BitOffs>992</BitOffs>
 			</SubItem>
 			<SubItem>
-				<Name Location="Output" FbParameter="Output">AHU2_StatusError</Name>
+				<Name Location="Output" FbParameter="Output">AHU2_DcsOccupied</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
 				<BitOffs>1000</BitOffs>
 			</SubItem>
 			<SubItem>
-				<Name Location="Output" FbParameter="Output">AHU2_TripError</Name>
+				<Name Location="Output" FbParameter="Output">AHU2_StatusError</Name>
 				<Type>BOOL</Type>
 				<BitSize>8</BitSize>
 				<BitOffs>1008</BitOffs>
 			</SubItem>
 			<SubItem>
+				<Name Location="Output" FbParameter="Output">AHU2_TripError</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>1016</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Output">bAHU2_Error</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>1024</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Output">AHU_CommonAlarm</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>1032</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Output">AHU_DCSOccupied</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>1040</BitOffs>
+			</SubItem>
+			<SubItem>
 				<Name FbParameter="InOut">bAHU1_On</Name>
 				<Type Pointer="1">BOOL</Type>
 				<BitSize>32</BitSize>
-				<BitOffs>1016</BitOffs>
+				<BitOffs>1048</BitOffs>
 			</SubItem>
 			<SubItem>
 				<Name FbParameter="InOut">bAHU2_On</Name>
 				<Type Pointer="1">BOOL</Type>
 				<BitSize>32</BitSize>
-				<BitOffs>1048</BitOffs>
+				<BitOffs>1080</BitOffs>
 			</SubItem>
 			<FbInfo>
 				<CodeIndex>59</CodeIndex>
 				<InitIndex>60</InitIndex>
+			</FbInfo>
+		</DataType>
+		<DataType>
+			<Name Decoration="100B331F" Crc32="3372788830" LastChange="2016-08-10T14:03:27">Flowchart_5_6</Name>
+			<BitSize>96</BitSize>
+			<SubItem>
+				<Name Location="Input">TEMPERATURE</Name>
+				<Type>INT</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name Location="Output">HEATER_STAGE1</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name Location="Output">HEATER_STAGE2</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>24</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name Location="Output">HEATER_STAGE3</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>32</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>_ImpVar_38_2</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>40</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>_ImpVar_38_1</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>48</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>_ImpVar_38_10</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>56</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>_ImpVar_38_16</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>64</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Input">on_status</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>72</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Input">flow_status</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>80</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Input">high_temp</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>88</BitOffs>
+			</SubItem>
+			<FbInfo>
+				<CodeIndex>61</CodeIndex>
+				<InitIndex>62</InitIndex>
+			</FbInfo>
+		</DataType>
+		<DataType>
+			<Name Decoration="10042507" Crc32="1124903889" LastChange="2016-08-10T11:37:13">ErrorFilter</Name>
+			<BitSize>168</BitSize>
+			<SubItem>
+				<Name IsDefinedInLibrary="1" Library="C:\TWINCAT\PLC\LIB\STANDARD.LIB">timer</Name>
+				<Type Decoration="10060D24">TON</Type>
+				<BitSize>120</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Input">IN</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>120</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Input">PT</Name>
+				<Type>TIME</Type>
+				<BitSize>32</BitSize>
+				<BitOffs>128</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Output">Q</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>160</BitOffs>
+			</SubItem>
+			<FbInfo>
+				<CodeIndex>66</CodeIndex>
+				<InitIndex>67</InitIndex>
+			</FbInfo>
+		</DataType>
+		<DataType>
+			<Name Decoration="100FBD54" Crc32="1428757721" LastChange="2016-08-10T11:55:21">AHU_INTERNAL</Name>
+			<BitSize>320</BitSize>
+			<SubItem>
+				<Name Location="Output">AHU1_Relay</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name IsDefinedInLibrary="1" Library="C:\TWINCAT\PLC\LIB\STANDARD.LIB">Error_timer_1</Name>
+				<Type Decoration="10060D24">TOF</Type>
+				<BitSize>120</BitSize>
+				<BitOffs>8</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name IsDefinedInLibrary="1" Library="C:\TWINCAT\PLC\LIB\STANDARD.LIB">OnRtrigAHU1</Name>
+				<Type Decoration="1003051C">R_TRIG</Type>
+				<BitSize>24</BitSize>
+				<BitOffs>128</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name IsDefinedInLibrary="1" Library="C:\TWINCAT\PLC\LIB\STANDARD.LIB">OffRtrigAHU1</Name>
+				<Type Decoration="1003051C">R_TRIG</Type>
+				<BitSize>24</BitSize>
+				<BitOffs>152</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name IsDefinedInLibrary="1" Library="C:\TWINCAT\PLC\LIB\STANDARD.LIB">Emergencylatch1</Name>
+				<Type Decoration="1003051C">R_TRIG</Type>
+				<BitSize>24</BitSize>
+				<BitOffs>176</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name IsDefinedInLibrary="1" Library="C:\TWINCAT\PLC\LIB\STANDARD.LIB">Emergencylatch2</Name>
+				<Type Decoration="1003051C">R_TRIG</Type>
+				<BitSize>24</BitSize>
+				<BitOffs>200</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>_ImpVar_50_218</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>224</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>_ImpVar_50_219</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>232</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>_ImpVar_50_234</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>240</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>_ImpVar_50_232</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>248</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Input">AHU1_On</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>256</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Input">Emergency1</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>264</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Input">Emergency2</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>272</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Output">DcsOccupied</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>280</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="InOut">AHU1_Latch</Name>
+				<Type Pointer="1">BOOL</Type>
+				<BitSize>32</BitSize>
+				<BitOffs>288</BitOffs>
+			</SubItem>
+			<FbInfo>
+				<CodeIndex>68</CodeIndex>
+				<InitIndex>69</InitIndex>
+			</FbInfo>
+		</DataType>
+		<DataType>
+			<Name Decoration="10054B8B" Crc32="0124516358" LastChange="2016-08-10T11:43:13">ERROR_INTERNAL</Name>
+			<BitSize>200</BitSize>
+			<SubItem>
+				<Name>ErrorFilter1</Name>
+				<Type Decoration="10042507">ErrorFilter</Type>
+				<BitSize>168</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>_ImpVar_53_5</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>168</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Input">status_error</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>176</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Input">trip_error</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>184</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Output">Q</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>192</BitOffs>
+			</SubItem>
+			<FbInfo>
+				<CodeIndex>70</CodeIndex>
+				<InitIndex>71</InitIndex>
+			</FbInfo>
+		</DataType>
+		<DataType>
+			<Name Decoration="10182127" Crc32="0929115762" LastChange="2016-08-10T11:57:21">Flowchart_1_2_CTRL</Name>
+			<BitSize>2352</BitSize>
+			<SubItem>
+				<Name>DEV_1</Name>
+				<Type Decoration="100FBD54">AHU_INTERNAL</Type>
+				<BitSize>320</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>DEV_2</Name>
+				<Type Decoration="100FBD54">AHU_INTERNAL</Type>
+				<BitSize>320</BitSize>
+				<BitOffs>320</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>DEV_3</Name>
+				<Type Decoration="100FBD54">AHU_INTERNAL</Type>
+				<BitSize>320</BitSize>
+				<BitOffs>640</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>DEV1_ErrorInternal_1</Name>
+				<Type Decoration="10054B8B">ERROR_INTERNAL</Type>
+				<BitSize>200</BitSize>
+				<BitOffs>960</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>DEV1_ErrorInternal_2</Name>
+				<Type Decoration="10054B8B">ERROR_INTERNAL</Type>
+				<BitSize>200</BitSize>
+				<BitOffs>1160</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>DEV2_ErrorInternal_1</Name>
+				<Type Decoration="10054B8B">ERROR_INTERNAL</Type>
+				<BitSize>200</BitSize>
+				<BitOffs>1360</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>DEV2_ErrorInternal_2</Name>
+				<Type Decoration="10054B8B">ERROR_INTERNAL</Type>
+				<BitSize>200</BitSize>
+				<BitOffs>1560</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>DEV3_ErrorInternal_1</Name>
+				<Type Decoration="10054B8B">ERROR_INTERNAL</Type>
+				<BitSize>200</BitSize>
+				<BitOffs>1760</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>DEV3_ErrorInternal_2</Name>
+				<Type Decoration="10054B8B">ERROR_INTERNAL</Type>
+				<BitSize>200</BitSize>
+				<BitOffs>1960</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Input">ON1</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>2160</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Input">ON2</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>2168</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Input">ON3</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>2176</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Input">status_error_1</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>2184</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Input">status_error_2</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>2192</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Input">status_error_3</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>2200</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Input">trip_error_1</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>2208</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Input">trip_error_2</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>2216</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Input">trip_error_3</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>2224</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Output">DcsOccupied_1</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>2232</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Output">DcsOccupied_2</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>2240</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="Output">DcsOccupied_3</Name>
+				<Type>BOOL</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>2248</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="InOut">Latch1</Name>
+				<Type Pointer="1">BOOL</Type>
+				<BitSize>32</BitSize>
+				<BitOffs>2256</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="InOut">Latch2</Name>
+				<Type Pointer="1">BOOL</Type>
+				<BitSize>32</BitSize>
+				<BitOffs>2288</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name FbParameter="InOut">Latch3</Name>
+				<Type Pointer="1">BOOL</Type>
+				<BitSize>32</BitSize>
+				<BitOffs>2320</BitOffs>
+			</SubItem>
+			<FbInfo>
+				<CodeIndex>72</CodeIndex>
+				<InitIndex>73</InitIndex>
 			</FbInfo>
 		</DataType>
 		<DataType>
@@ -841,6 +1291,42 @@
 	</DataTypes>
 	<Functions>
 		<Function>
+			<Name Decoration="100612C5" Crc32="3299727637" LastChange="2016-08-09T15:25:57">range_on_off</Name>
+			<FunInfo>
+				<CodeIndex>63</CodeIndex>
+				<ReturnValue>
+					<Name>range_on_off</Name>
+					<Type>BOOL</Type>
+					<BitSize>8</BitSize>
+				</ReturnValue>
+				<FunParameter>
+					<Name FunParameter="Input">IN</Name>
+					<Type>BOOL</Type>
+					<BitSize>8</BitSize>
+				</FunParameter>
+				<FunParameter>
+					<Name FunParameter="Input">STATUS</Name>
+					<Type>BOOL</Type>
+					<BitSize>8</BitSize>
+				</FunParameter>
+				<FunParameter>
+					<Name FunParameter="Input">TEMP</Name>
+					<Type>INT</Type>
+					<BitSize>16</BitSize>
+				</FunParameter>
+				<FunParameter>
+					<Name FunParameter="Input">ON_RANGE</Name>
+					<Type>INT</Type>
+					<BitSize>16</BitSize>
+				</FunParameter>
+				<FunParameter>
+					<Name FunParameter="Input">OFF_RANGE</Name>
+					<Type>INT</Type>
+					<BitSize>16</BitSize>
+				</FunParameter>
+			</FunInfo>
+		</Function>
+		<Function>
 			<Name Decoration="1003CF58" IsDefinedInLibrary="1" Library="C:\TWINCAT\PLC\LIB\STANDARD.LIB">CONCAT</Name>
 			<FunInfo>
 				<CodeIndex>17</CodeIndex>
@@ -1052,13 +1538,13 @@
 	</Functions>
 	<Programs>
 		<Program>
-			<Name Decoration="10000000" Crc32="2159816550" LastChange="2016-08-08T22:27:47">MAIN</Name>
+			<Name Decoration="10000000" Crc32="2108453964" LastChange="2016-08-10T18:01:58">MAIN</Name>
 			<PrgInfo>
 				<CodeIndex>51</CodeIndex>
 			</PrgInfo>
 		</Program>
 		<Program>
-			<Name Decoration="1004E5FF" Crc32="0453255332" LastChange="2016-08-09T12:36:06">TEST</Name>
+			<Name Decoration="100543DC" Crc32="3505625239" LastChange="2016-08-09T15:24:47">TEST</Name>
 			<PrgInfo>
 				<CodeIndex>52</CodeIndex>
 				<Symbol>
@@ -1073,37 +1559,4745 @@
 				<Symbol>
 					<Name>TEST.bAHU3</Name>
 				</Symbol>
+				<Symbol>
+					<Name>TEST.fbtest</Name>
+				</Symbol>
+			</PrgInfo>
+		</Program>
+		<Program>
+			<Name Decoration="109D11B3" Crc32="0919442674" LastChange="2016-08-10T17:31:12">CCB_GroundFloor</Name>
+			<PrgInfo>
+				<CodeIndex>64</CodeIndex>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_01_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_01_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_01_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_01_belt</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_01_fire</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_01_gas</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_01_smoke</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_01_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_01_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_01_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_01_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_01_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_01_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_01_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_01_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_02_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_02_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_02_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_02_belt</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_02_fire</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_02_gas</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_02_smoke</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_02_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_02_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_02_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_02_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_02_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_02_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_02_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_02_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_03_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_03_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_03_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_03_belt</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_03_fire</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_03_gas</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_03_smoke</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_03_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_03_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_03_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_03_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_03_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_03_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_03_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCBG_03_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.AHU_CCCBG</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_1_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_1_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_1_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_1_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_1_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_1_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_1_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_1_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_1_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_1_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_1_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_2_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_2_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_2_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_2_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_2_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_2_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_2_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_2_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_2_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_2_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_2_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_Dummy</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.TEF_CCB_01_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.TEF_CCB_01_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.TEF_CCB_01_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.TEF_CCB_01_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.TEF_CCB_01_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.TEF_CCB_01_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.TEF_CCB_01_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.TEF_CCB_01_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.TEF_CCB_01_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.TEF_CCB_01_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.TEF_CCB_01_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.TEC_CCB</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_7A_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_7A_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_7A_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_7A_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_7A_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_7A_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_7A_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_7B_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_7B_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_7B_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_7B_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_7B_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_7B_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_7B_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_7B_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_7B_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_7B_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_08_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_08_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_08_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_08_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_08_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_08_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_08_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_08_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_08_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EF_CCB_08_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EH_CCB_01_on_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EH_CCB_01_flow_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EH_CCB_01_high_temp</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EH_CCB_01_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EH_CCB_01_hightemp_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EH_CCB_01_FB</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EH_CCB_02_on_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EH_CCB_02_flow_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EH_CCB_02_high_temp</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EH_CCB_02_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EH_CCB_02_hightemp_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.EH_CCB_02_FB</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MD_CCBG_1_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MD_CCBG_1_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MD_CCBG_2_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MD_CCBG_2_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MD_CCBG_3_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MD_CCBG_3_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MD_CCBG_4_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MD_CCBG_4_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MD_EF_CCB_7A_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MD_EF_CCB_7A_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MD_EF_CCB_7B_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MD_EF_CCB_7B_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MD_EF_CCB_8_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MD_EF_CCB_8_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_1_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_1_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_2_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_2_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_3_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_3_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_4_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_4_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_5_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_5_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_6_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_6_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_7_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_7_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_8_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_8_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_9_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_9_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_10_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.MFD_CCB_10_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.DCS_Occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_GroundFloor.common_alarm</Name>
+				</Symbol>
+			</PrgInfo>
+		</Program>
+		<Program>
+			<Name Decoration="10263D9D" Crc32="1407248002" LastChange="2016-08-10T17:31:46">CCB_FirstFloor</Name>
+			<PrgInfo>
+				<CodeIndex>65</CodeIndex>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23A_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23A_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23A_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23A_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23A_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23A_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23A_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23A_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23A_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23A_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23A_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23A_FB</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23B_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23B_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23B_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23B_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23B_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23B_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23B_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23B_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23B_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23B_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23B_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23B_FB</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23C_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23C_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23C_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23C_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23C_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23C_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23C_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23C_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23C_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23C_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23C_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.FCU_CCB1_23C_FB</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.DCS_Occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>CCB_FirstFloor.common_alarm</Name>
+				</Symbol>
+			</PrgInfo>
+		</Program>
+		<Program>
+			<Name Decoration="105BECE0" Crc32="1543994177" LastChange="2016-08-10T17:46:52">Laboratory</Name>
+			<PrgInfo>
+				<CodeIndex>74</CodeIndex>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_1_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_1_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_1_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_1_belt</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_1_fire</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_1_gas</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_1_smoke</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_1_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_1_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_1_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_1_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_1_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_1_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_1_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_1_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_2_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_2_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_2_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_2_belt</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_2_fire</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_2_gas</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_2_smoke</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_2_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_2_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_2_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_2_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_2_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_2_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_2_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_2_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_3_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_3_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_3_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_3_belt</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_3_fire</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_3_gas</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_3_smoke</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_3_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_3_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_3_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_3_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_3_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_3_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_3_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.AHU_LAB_3_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_1_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_1_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_1_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_1_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_1_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_1_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_1_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_1_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_1_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_1_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_1_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_2_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_2_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_2_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_2_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_2_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_2_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_2_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_2_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_2_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_2_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_2_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_3_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_3_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_3_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_3_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_3_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_3_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_3_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_3_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_3_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_3_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EF_LAB_3_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EH_LAB_1_on_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EH_LAB_1_flow_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EH_LAB_1_high_temp</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EH_LAB_1_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.EH_LAB_1_hightemp_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.MD_LAB_1_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.MD_LAB_1_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.MD_LAB_2_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.MD_LAB_2_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.MD_LAB_3_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.MD_LAB_3_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.MD_LAB_4_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Laboratory.MD_LAB_4_damper_close</Name>
+				</Symbol>
+			</PrgInfo>
+		</Program>
+		<Program>
+			<Name Decoration="107C6791" Crc32="2121969627" LastChange="2016-08-10T17:58:13">Main_Switch_Board</Name>
+			<PrgInfo>
+				<CodeIndex>75</CodeIndex>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1A_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1A_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1A_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1A_belt</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1A_fire</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1A_gas</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1A_smoke</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1A_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1A_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1A_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1A_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1A_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1A_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1A_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1A_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1B_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1B_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1B_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1B_belt</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1B_fire</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1B_gas</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1B_smoke</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1B_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1B_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1B_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1B_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1B_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1B_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1B_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1B_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1C_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1C_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1C_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1C_belt</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1C_fire</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1C_gas</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1C_smoke</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1C_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1C_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1C_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1C_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1C_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1C_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1C_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.AHU_MSB_1C_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_1_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_1_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_1_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_1_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_1_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_1_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_1_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_1_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_1_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_1_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_1_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_2_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_2_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_2_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_2_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_2_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_2_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_2_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_2_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_2_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_2_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_2_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_3_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_3_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_3_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_3_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_3_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_3_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_3_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_3_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_3_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_3_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_3_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_4_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_4_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_4_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_4_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_4_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_4_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_4_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_4_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_4_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_4_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EF_MSB_4_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EDH_MSB_1_on_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EDH_MSB_1_flow_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EDH_MSB_1_high_temp</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EDH_MSB_1_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.EDH_MSB_1_hightemp_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MD_MSB_01A_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MD_MSB_01A_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MD_MSB_01B_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MD_MSB_01B_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MD_MSB_01C_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MD_MSB_01C_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MD_MSB_01D_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MD_MSB_01D_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MD_EF_MSB_01E_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MD_EF_MSB_01E_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MD_EF_MSB_01F_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MD_EF_MSB_01F_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MFD_MSB_1_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MFD_MSB_1_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MFD_MSB_2_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MFD_MSB_2_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MFD_MSB_3_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MFD_MSB_3_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MFD_MSB_4_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MFD_MSB_4_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MFD_MSB_5_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MFD_MSB_5_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MFD_MSB_6_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MFD_MSB_6_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MFD_MSB_7_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MFD_MSB_7_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MFD_MSB_8_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MFD_MSB_8_damper_close</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MFD_MSB_9_damper_open</Name>
+				</Symbol>
+				<Symbol>
+					<Name>Main_Switch_Board.MFD_MSB_9_damper_close</Name>
+				</Symbol>
+			</PrgInfo>
+		</Program>
+		<Program>
+			<Name Decoration="1034155C" Crc32="1585068765" LastChange="2016-08-10T18:01:58">EDG_HOUSE</Name>
+			<PrgInfo>
+				<CodeIndex>76</CodeIndex>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_1_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_1_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_1_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_1_belt</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_1_fire</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_1_gas</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_1_smoke</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_1_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_1_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_1_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_1_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_1_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_1_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_1_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_1_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_2_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_2_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_2_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_2_belt</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_2_fire</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_2_gas</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_2_smoke</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_2_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_2_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_2_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_2_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_2_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_2_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_2_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.AHU_EDG_2_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01A_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01A_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01A_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01A_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01A_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01A_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01A_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01A_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01A_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01A_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01A_trip_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01B_status</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01B_trip</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01B_mode</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01B_trigger</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01B_latch</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01B_common_alarm</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01B_status_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01B_trip_error</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01B_dcs_occupied</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01B_status_Filter</Name>
+				</Symbol>
+				<Symbol>
+					<Name>EDG_HOUSE.EF_EDG_01B_trip_Filter</Name>
+				</Symbol>
 			</PrgInfo>
 		</Program>
 	</Programs>
 	<Symbols>
 		<Symbol>
 			<Name TaskPrio="1">TEST.fbTest_Flowchart_1_2</Name>
-			<Type Decoration="1025C083">Flowchart_3_4_SingleButton</Type>
+			<Type Decoration="1029D58A">Flowchart_3_4_SingleButton</Type>
 			<IGroup>16448</IGroup>
-			<IOffset>0</IOffset>
-			<BitSize>1080</BitSize>
+			<IOffset>550</IOffset>
+			<BitSize>1112</BitSize>
 		</Symbol>
 		<Symbol>
 			<Name TaskPrio="1">TEST.bAHU1</Name>
 			<Type>BOOL</Type>
 			<IGroup>16448</IGroup>
-			<IOffset>135</IOffset>
+			<IOffset>141</IOffset>
 			<BitSize>8</BitSize>
 		</Symbol>
 		<Symbol>
 			<Name TaskPrio="1">TEST.bAHU2</Name>
 			<Type>BOOL</Type>
 			<IGroup>16448</IGroup>
-			<IOffset>136</IOffset>
+			<IOffset>142</IOffset>
 			<BitSize>8</BitSize>
 		</Symbol>
 		<Symbol>
 			<Name>TEST.bAHU3</Name>
 			<Type>BOOL</Type>
 			<IGroup>16448</IGroup>
+			<IOffset>143</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">TEST.fbtest</Name>
+			<Type Decoration="100B331F">Flowchart_5_6</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>144</IOffset>
+			<BitSize>96</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.AHU_CCBG_01_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.AHU_CCBG_01_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.AHU_CCBG_01_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.AHU_CCBG_01_belt</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.AHU_CCBG_01_fire</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.AHU_CCBG_01_gas</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.AHU_CCBG_01_smoke</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_01_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>7</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_01_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>8</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_01_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>9</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_01_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>10</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_01_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>11</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_01_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>12</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_01_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>13</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_01_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>34</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.AHU_CCBG_02_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.AHU_CCBG_02_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.AHU_CCBG_02_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.AHU_CCBG_02_belt</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.AHU_CCBG_02_fire</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.AHU_CCBG_02_gas</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.AHU_CCBG_02_smoke</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_02_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>62</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_02_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>63</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_02_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>64</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_02_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>65</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_02_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>66</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_02_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>67</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_02_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>68</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_02_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>89</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.AHU_CCBG_03_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.AHU_CCBG_03_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.AHU_CCBG_03_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.AHU_CCBG_03_belt</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.AHU_CCBG_03_fire</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.AHU_CCBG_03_gas</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.AHU_CCBG_03_smoke</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_03_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>117</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_03_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>118</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_03_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>119</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_03_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>120</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_03_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>121</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_03_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>122</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_03_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>194</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCBG_03_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>215</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.AHU_CCCBG</Name>
+			<Type Decoration="10182127">Flowchart_1_2_CTRL</Type>
+			<Comment>
+				<![CDATA[****************************************************************************************************]]>
+			</Comment>
+			<IGroup>16448</IGroup>
+			<IOffset>236</IOffset>
+			<BitSize>2352</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.EF_CCB_1_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.EF_CCB_1_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.EF_CCB_1_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_1_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>126</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_1_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>127</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_1_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>128</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_1_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>129</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_1_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>130</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_1_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>131</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_1_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>689</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_1_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>710</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.EF_CCB_2_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.EF_CCB_2_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.EF_CCB_2_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_2_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>135</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_2_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>136</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_2_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
 			<IOffset>137</IOffset>
 			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_2_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>138</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_2_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>139</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_2_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>140</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_2_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>731</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_2_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>752</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB</Name>
+			<Type Decoration="10182127">Flowchart_1_2_CTRL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>773</IOffset>
+			<BitSize>2352</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_Dummy</Name>
+			<Type>BOOL</Type>
+			<Comment>
+				<![CDATA[******************************************************************************************************************************************************]]>
+			</Comment>
+			<IGroup>16448</IGroup>
+			<IOffset>530</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.TEF_CCB_01_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.TEF_CCB_01_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.TEF_CCB_01_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.TEF_CCB_01_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>534</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.TEF_CCB_01_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>535</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.TEF_CCB_01_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>536</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.TEF_CCB_01_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>537</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.TEF_CCB_01_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>538</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.TEF_CCB_01_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>539</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.TEF_CCB_01_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1067</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.TEF_CCB_01_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1088</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.TEC_CCB</Name>
+			<Type Decoration="1004E439">Flowchart_7</Type>
+			<Comment>
+				<![CDATA[*************************************************************************************************************************************************]]>
+			</Comment>
+			<IGroup>16448</IGroup>
+			<IOffset>1109</IOffset>
+			<BitSize>392</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.EF_CCB_7A_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.EF_CCB_7A_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_7A_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>542</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_7A_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>543</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_7A_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>544</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_7A_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1158</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_7A_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1179</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.EF_CCB_7B_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.EF_CCB_7B_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>CCB_GroundFloor.EF_CCB_7B_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>547</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>CCB_GroundFloor.EF_CCB_7B_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>548</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_7B_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>549</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_7B_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1200</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_7B_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1201</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>CCB_GroundFloor.EF_CCB_7B_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1202</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_7B_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1203</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_7B_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1224</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.EF_CCB_08_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.EF_CCB_08_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>CCB_GroundFloor.EF_CCB_08_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1247</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>CCB_GroundFloor.EF_CCB_08_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1248</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_08_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1249</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_08_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1250</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_08_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1251</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>CCB_GroundFloor.EF_CCB_08_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1252</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_08_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1253</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EF_CCB_08_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<Comment>
+				<![CDATA[****************************************************************************************************************************]]>
+			</Comment>
+			<IGroup>16448</IGroup>
+			<IOffset>1274</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.EH_CCB_01_on_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.EH_CCB_01_flow_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.EH_CCB_01_high_temp</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EH_CCB_01_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1298</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EH_CCB_01_hightemp_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1299</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EH_CCB_01_FB</Name>
+			<Type Decoration="100B331F">Flowchart_5_6</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1300</IOffset>
+			<BitSize>96</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.EH_CCB_02_on_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.EH_CCB_02_flow_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.EH_CCB_02_high_temp</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EH_CCB_02_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1315</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EH_CCB_02_hightemp_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1316</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_GroundFloor.EH_CCB_02_FB</Name>
+			<Type Decoration="100B331F">Flowchart_5_6</Type>
+			<Comment>
+				<![CDATA[****************************************************************************************************************************]]>
+			</Comment>
+			<IGroup>16448</IGroup>
+			<IOffset>1317</IOffset>
+			<BitSize>96</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MD_CCBG_1_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MD_CCBG_1_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MD_CCBG_2_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MD_CCBG_2_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MD_CCBG_3_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MD_CCBG_3_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MD_CCBG_4_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MD_CCBG_4_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MD_EF_CCB_7A_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MD_EF_CCB_7A_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MD_EF_CCB_7B_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MD_EF_CCB_7B_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MD_EF_CCB_8_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MD_EF_CCB_8_damper_close</Name>
+			<Type>BOOL</Type>
+			<Comment>
+				<![CDATA[*************************************************************************************************************************]]>
+			</Comment>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_1_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_1_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_2_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_2_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_3_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_3_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_4_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_4_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_5_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_5_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_6_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_6_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_7_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_7_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_8_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_8_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_9_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_9_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_10_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_GroundFloor.MFD_CCB_10_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Output" TaskPrio="1">CCB_GroundFloor.DCS_Occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Output" TaskPrio="1">CCB_GroundFloor.common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23A_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23A_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_FirstFloor.FCU_CCB1_23A_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23A_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1366</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23A_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1367</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23A_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1368</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23A_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1369</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23A_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1370</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23A_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1371</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23A_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1372</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23A_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1393</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23A_FB</Name>
+			<Type Decoration="1004E439">Flowchart_7</Type>
+			<Comment>
+				<![CDATA[***********************************************************************************************************]]>
+			</Comment>
+			<IGroup>16448</IGroup>
+			<IOffset>1414</IOffset>
+			<BitSize>392</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23B_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23B_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_FirstFloor.FCU_CCB1_23B_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23B_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1466</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23B_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1467</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23B_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1468</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23B_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1469</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23B_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1470</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23B_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1471</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23B_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1472</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23B_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1493</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23B_FB</Name>
+			<Type Decoration="1004E439">Flowchart_7</Type>
+			<Comment>
+				<![CDATA[***********************************************************************************************************]]>
+			</Comment>
+			<IGroup>16448</IGroup>
+			<IOffset>1514</IOffset>
+			<BitSize>392</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23C_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23C_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">CCB_FirstFloor.FCU_CCB1_23C_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23C_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1566</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23C_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1567</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23C_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1568</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23C_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1569</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23C_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1570</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23C_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1571</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23C_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1572</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23C_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1593</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23C_FB</Name>
+			<Type Decoration="1004E439">Flowchart_7</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1614</IOffset>
+			<BitSize>392</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Output" TaskPrio="1">CCB_FirstFloor.DCS_Occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Output" TaskPrio="1">CCB_FirstFloor.common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.AHU_LAB_1_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.AHU_LAB_1_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Laboratory.AHU_LAB_1_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Laboratory.AHU_LAB_1_belt</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.AHU_LAB_1_fire</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.AHU_LAB_1_gas</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.AHU_LAB_1_smoke</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Laboratory.AHU_LAB_1_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1674</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.AHU_LAB_1_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1675</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.AHU_LAB_1_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1676</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.AHU_LAB_1_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1677</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.AHU_LAB_1_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1678</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Laboratory.AHU_LAB_1_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1679</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.AHU_LAB_1_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1680</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.AHU_LAB_1_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1701</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.AHU_LAB_2_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.AHU_LAB_2_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Laboratory.AHU_LAB_2_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Laboratory.AHU_LAB_2_belt</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.AHU_LAB_2_fire</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.AHU_LAB_2_gas</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.AHU_LAB_2_smoke</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Laboratory.AHU_LAB_2_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1729</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.AHU_LAB_2_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1730</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.AHU_LAB_2_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1731</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.AHU_LAB_2_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1732</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.AHU_LAB_2_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1733</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Laboratory.AHU_LAB_2_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1734</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.AHU_LAB_2_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1735</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.AHU_LAB_2_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1756</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.AHU_LAB_3_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.AHU_LAB_3_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Laboratory.AHU_LAB_3_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Laboratory.AHU_LAB_3_belt</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.AHU_LAB_3_fire</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.AHU_LAB_3_gas</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.AHU_LAB_3_smoke</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Laboratory.AHU_LAB_3_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1784</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.AHU_LAB_3_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1785</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.AHU_LAB_3_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1786</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.AHU_LAB_3_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1787</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.AHU_LAB_3_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1788</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Laboratory.AHU_LAB_3_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1789</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.AHU_LAB_3_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1790</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.AHU_LAB_3_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<Comment>
+				<![CDATA[****************************************************************]]>
+			</Comment>
+			<IGroup>16448</IGroup>
+			<IOffset>1811</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.EF_LAB_1_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.EF_LAB_1_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Laboratory.EF_LAB_1_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Laboratory.EF_LAB_1_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1835</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EF_LAB_1_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1836</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EF_LAB_1_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1837</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EF_LAB_1_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1838</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EF_LAB_1_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1839</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Laboratory.EF_LAB_1_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1840</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EF_LAB_1_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1841</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EF_LAB_1_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1862</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.EF_LAB_2_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.EF_LAB_2_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Laboratory.EF_LAB_2_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Laboratory.EF_LAB_2_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1886</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EF_LAB_2_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1887</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EF_LAB_2_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1888</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EF_LAB_2_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1889</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EF_LAB_2_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1890</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Laboratory.EF_LAB_2_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1891</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EF_LAB_2_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1892</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EF_LAB_2_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1913</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.EF_LAB_3_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.EF_LAB_3_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Laboratory.EF_LAB_3_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Laboratory.EF_LAB_3_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1937</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EF_LAB_3_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1938</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EF_LAB_3_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1939</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EF_LAB_3_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1940</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EF_LAB_3_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1941</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Laboratory.EF_LAB_3_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1942</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EF_LAB_3_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1943</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EF_LAB_3_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<Comment>
+				<![CDATA[****************************************************************]]>
+			</Comment>
+			<IGroup>16448</IGroup>
+			<IOffset>1964</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Laboratory.EH_LAB_1_on_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Laboratory.EH_LAB_1_flow_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Laboratory.EH_LAB_1_high_temp</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EH_LAB_1_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>1988</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Laboratory.EH_LAB_1_hightemp_error</Name>
+			<Type>BOOL</Type>
+			<Comment>
+				<![CDATA[***************************************************************]]>
+			</Comment>
+			<IGroup>16448</IGroup>
+			<IOffset>1989</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Laboratory.MD_LAB_1_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Laboratory.MD_LAB_1_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Laboratory.MD_LAB_2_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Laboratory.MD_LAB_2_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Laboratory.MD_LAB_3_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Laboratory.MD_LAB_3_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Laboratory.MD_LAB_4_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Laboratory.MD_LAB_4_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.AHU_MSB_1A_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.AHU_MSB_1A_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.AHU_MSB_1A_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.AHU_MSB_1A_belt</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.AHU_MSB_1A_fire</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.AHU_MSB_1A_gas</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.AHU_MSB_1A_smoke</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Main_Switch_Board.AHU_MSB_1A_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2005</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.AHU_MSB_1A_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2006</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.AHU_MSB_1A_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2007</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.AHU_MSB_1A_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2008</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.AHU_MSB_1A_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2009</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Main_Switch_Board.AHU_MSB_1A_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2010</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.AHU_MSB_1A_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2011</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.AHU_MSB_1A_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2032</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.AHU_MSB_1B_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.AHU_MSB_1B_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.AHU_MSB_1B_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.AHU_MSB_1B_belt</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.AHU_MSB_1B_fire</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.AHU_MSB_1B_gas</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.AHU_MSB_1B_smoke</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Main_Switch_Board.AHU_MSB_1B_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2060</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.AHU_MSB_1B_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2061</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.AHU_MSB_1B_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2062</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.AHU_MSB_1B_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2063</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.AHU_MSB_1B_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2064</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Main_Switch_Board.AHU_MSB_1B_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2065</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.AHU_MSB_1B_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2066</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.AHU_MSB_1B_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2087</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.AHU_MSB_1C_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.AHU_MSB_1C_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.AHU_MSB_1C_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.AHU_MSB_1C_belt</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.AHU_MSB_1C_fire</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.AHU_MSB_1C_gas</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.AHU_MSB_1C_smoke</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Main_Switch_Board.AHU_MSB_1C_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2115</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.AHU_MSB_1C_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2116</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.AHU_MSB_1C_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2117</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.AHU_MSB_1C_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2118</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.AHU_MSB_1C_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2119</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Main_Switch_Board.AHU_MSB_1C_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2120</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.AHU_MSB_1C_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2121</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.AHU_MSB_1C_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<Comment>
+				<![CDATA[*************************************************************]]>
+			</Comment>
+			<IGroup>16448</IGroup>
+			<IOffset>2142</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.EF_MSB_1_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.EF_MSB_1_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.EF_MSB_1_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Main_Switch_Board.EF_MSB_1_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2166</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_1_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2167</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_1_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2168</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_1_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2169</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_1_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2170</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Main_Switch_Board.EF_MSB_1_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2171</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_1_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2172</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_1_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2193</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.EF_MSB_2_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.EF_MSB_2_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.EF_MSB_2_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Main_Switch_Board.EF_MSB_2_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2217</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_2_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2218</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_2_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2219</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_2_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2220</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_2_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2221</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Main_Switch_Board.EF_MSB_2_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2222</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_2_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2223</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_2_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2244</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.EF_MSB_3_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.EF_MSB_3_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.EF_MSB_3_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Main_Switch_Board.EF_MSB_3_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2268</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_3_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2269</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_3_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2270</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_3_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2271</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_3_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2272</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Main_Switch_Board.EF_MSB_3_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2273</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_3_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2274</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_3_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2295</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.EF_MSB_4_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.EF_MSB_4_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.EF_MSB_4_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Main_Switch_Board.EF_MSB_4_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2319</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_4_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2320</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_4_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2321</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_4_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2322</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_4_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2323</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>Main_Switch_Board.EF_MSB_4_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2324</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_4_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2325</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EF_MSB_4_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<Comment>
+				<![CDATA[*************************************************************]]>
+			</Comment>
+			<IGroup>16448</IGroup>
+			<IOffset>2346</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.EDH_MSB_1_on_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.EDH_MSB_1_flow_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">Main_Switch_Board.EDH_MSB_1_high_temp</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EDH_MSB_1_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2370</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">Main_Switch_Board.EDH_MSB_1_hightemp_error</Name>
+			<Type>BOOL</Type>
+			<Comment>
+				<![CDATA[*************************************************************]]>
+			</Comment>
+			<IGroup>16448</IGroup>
+			<IOffset>2371</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MD_MSB_01A_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MD_MSB_01A_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MD_MSB_01B_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MD_MSB_01B_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MD_MSB_01C_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MD_MSB_01C_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MD_MSB_01D_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MD_MSB_01D_damper_close</Name>
+			<Type>BOOL</Type>
+			<Comment>
+				<![CDATA[*************************************************************]]>
+			</Comment>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MD_EF_MSB_01E_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MD_EF_MSB_01E_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MD_EF_MSB_01F_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MD_EF_MSB_01F_damper_close</Name>
+			<Type>BOOL</Type>
+			<Comment>
+				<![CDATA[*************************************************************]]>
+			</Comment>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MFD_MSB_1_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MFD_MSB_1_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MFD_MSB_2_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MFD_MSB_2_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MFD_MSB_3_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MFD_MSB_3_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MFD_MSB_4_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MFD_MSB_4_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MFD_MSB_5_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MFD_MSB_5_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MFD_MSB_6_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MFD_MSB_6_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MFD_MSB_7_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MFD_MSB_7_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MFD_MSB_8_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MFD_MSB_8_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MFD_MSB_9_damper_open</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">Main_Switch_Board.MFD_MSB_9_damper_close</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">EDG_HOUSE.AHU_EDG_1_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">EDG_HOUSE.AHU_EDG_1_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">EDG_HOUSE.AHU_EDG_1_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">EDG_HOUSE.AHU_EDG_1_belt</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">EDG_HOUSE.AHU_EDG_1_fire</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">EDG_HOUSE.AHU_EDG_1_gas</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">EDG_HOUSE.AHU_EDG_1_smoke</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>EDG_HOUSE.AHU_EDG_1_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2409</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.AHU_EDG_1_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2410</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.AHU_EDG_1_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2411</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.AHU_EDG_1_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2412</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.AHU_EDG_1_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2413</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>EDG_HOUSE.AHU_EDG_1_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2414</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.AHU_EDG_1_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2415</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.AHU_EDG_1_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2436</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">EDG_HOUSE.AHU_EDG_2_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">EDG_HOUSE.AHU_EDG_2_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">EDG_HOUSE.AHU_EDG_2_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">EDG_HOUSE.AHU_EDG_2_belt</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">EDG_HOUSE.AHU_EDG_2_fire</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">EDG_HOUSE.AHU_EDG_2_gas</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">EDG_HOUSE.AHU_EDG_2_smoke</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>EDG_HOUSE.AHU_EDG_2_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2464</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.AHU_EDG_2_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2465</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.AHU_EDG_2_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2466</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.AHU_EDG_2_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2467</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.AHU_EDG_2_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2468</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>EDG_HOUSE.AHU_EDG_2_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2469</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.AHU_EDG_2_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2470</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.AHU_EDG_2_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2491</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">EDG_HOUSE.EF_EDG_01A_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">EDG_HOUSE.EF_EDG_01A_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">EDG_HOUSE.EF_EDG_01A_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>EDG_HOUSE.EF_EDG_01A_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2515</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.EF_EDG_01A_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2516</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.EF_EDG_01A_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2517</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.EF_EDG_01A_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2518</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.EF_EDG_01A_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2519</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>EDG_HOUSE.EF_EDG_01A_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2520</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.EF_EDG_01A_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2521</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.EF_EDG_01A_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2542</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">EDG_HOUSE.EF_EDG_01B_status</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input" TaskPrio="1">EDG_HOUSE.EF_EDG_01B_trip</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name Static="Input">EDG_HOUSE.EF_EDG_01B_mode</Name>
+			<Type>BOOL</Type>
+			<IGroup>61473</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>EDG_HOUSE.EF_EDG_01B_trigger</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2566</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.EF_EDG_01B_latch</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2567</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.EF_EDG_01B_common_alarm</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2568</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.EF_EDG_01B_status_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2569</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.EF_EDG_01B_trip_error</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2570</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name>EDG_HOUSE.EF_EDG_01B_dcs_occupied</Name>
+			<Type>BOOL</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2571</IOffset>
+			<BitSize>8</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.EF_EDG_01B_status_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2572</IOffset>
+			<BitSize>168</BitSize>
+		</Symbol>
+		<Symbol>
+			<Name TaskPrio="1">EDG_HOUSE.EF_EDG_01B_trip_Filter</Name>
+			<Type Decoration="10042507">ErrorFilter</Type>
+			<IGroup>16448</IGroup>
+			<IOffset>2593</IOffset>
+			<BitSize>168</BitSize>
 		</Symbol>
 	</Symbols>
 	<VarConfigs>
@@ -1115,7 +6309,7 @@
 			<BitSize>1</BitSize>
 			<Parent>
 				<Name SubItem="bAHU1_Status">TEST.fbTest_Flowchart_1_2</Name>
-				<Type Decoration="1025C083">Flowchart_3_4_SingleButton</Type>
+				<Type Decoration="1029D58A">Flowchart_3_4_SingleButton</Type>
 			</Parent>
 		</VarConfig>
 		<VarConfig>
@@ -1126,7 +6320,7 @@
 			<BitSize>1</BitSize>
 			<Parent>
 				<Name SubItem="bAHU1_Trip">TEST.fbTest_Flowchart_1_2</Name>
-				<Type Decoration="1025C083">Flowchart_3_4_SingleButton</Type>
+				<Type Decoration="1029D58A">Flowchart_3_4_SingleButton</Type>
 			</Parent>
 		</VarConfig>
 		<VarConfig>
@@ -1137,7 +6331,7 @@
 			<BitSize>1</BitSize>
 			<Parent>
 				<Name SubItem="bAHU1_Relay">TEST.fbTest_Flowchart_1_2</Name>
-				<Type Decoration="1025C083">Flowchart_3_4_SingleButton</Type>
+				<Type Decoration="1029D58A">Flowchart_3_4_SingleButton</Type>
 			</Parent>
 		</VarConfig>
 		<VarConfig>
@@ -1148,7 +6342,7 @@
 			<BitSize>1</BitSize>
 			<Parent>
 				<Name SubItem="bAHU2_Status">TEST.fbTest_Flowchart_1_2</Name>
-				<Type Decoration="1025C083">Flowchart_3_4_SingleButton</Type>
+				<Type Decoration="1029D58A">Flowchart_3_4_SingleButton</Type>
 			</Parent>
 		</VarConfig>
 		<VarConfig>
@@ -1159,7 +6353,7 @@
 			<BitSize>1</BitSize>
 			<Parent>
 				<Name SubItem="bAHU2_Trip">TEST.fbTest_Flowchart_1_2</Name>
-				<Type Decoration="1025C083">Flowchart_3_4_SingleButton</Type>
+				<Type Decoration="1029D58A">Flowchart_3_4_SingleButton</Type>
 			</Parent>
 		</VarConfig>
 		<VarConfig>
@@ -1170,7 +6364,7 @@
 			<BitSize>1</BitSize>
 			<Parent>
 				<Name SubItem="bAHU2_Relay">TEST.fbTest_Flowchart_1_2</Name>
-				<Type Decoration="1025C083">Flowchart_3_4_SingleButton</Type>
+				<Type Decoration="1029D58A">Flowchart_3_4_SingleButton</Type>
 			</Parent>
 		</VarConfig>
 		<VarConfig>
@@ -1181,7 +6375,7 @@
 			<BitSize>1</BitSize>
 			<Parent>
 				<Name SubItem="AHU1_DcsOccupied">TEST.fbTest_Flowchart_1_2</Name>
-				<Type Decoration="1025C083">Flowchart_3_4_SingleButton</Type>
+				<Type Decoration="1029D58A">Flowchart_3_4_SingleButton</Type>
 			</Parent>
 		</VarConfig>
 		<VarConfig>
@@ -1192,7 +6386,7 @@
 			<BitSize>1</BitSize>
 			<Parent>
 				<Name SubItem="AHU1_StatusError">TEST.fbTest_Flowchart_1_2</Name>
-				<Type Decoration="1025C083">Flowchart_3_4_SingleButton</Type>
+				<Type Decoration="1029D58A">Flowchart_3_4_SingleButton</Type>
 			</Parent>
 		</VarConfig>
 		<VarConfig>
@@ -1203,7 +6397,7 @@
 			<BitSize>1</BitSize>
 			<Parent>
 				<Name SubItem="AHU1_TripError">TEST.fbTest_Flowchart_1_2</Name>
-				<Type Decoration="1025C083">Flowchart_3_4_SingleButton</Type>
+				<Type Decoration="1029D58A">Flowchart_3_4_SingleButton</Type>
 			</Parent>
 		</VarConfig>
 		<VarConfig>
@@ -1214,7 +6408,7 @@
 			<BitSize>1</BitSize>
 			<Parent>
 				<Name SubItem="AHU2_DcsOccupied">TEST.fbTest_Flowchart_1_2</Name>
-				<Type Decoration="1025C083">Flowchart_3_4_SingleButton</Type>
+				<Type Decoration="1029D58A">Flowchart_3_4_SingleButton</Type>
 			</Parent>
 		</VarConfig>
 		<VarConfig>
@@ -1225,7 +6419,7 @@
 			<BitSize>1</BitSize>
 			<Parent>
 				<Name SubItem="AHU2_StatusError">TEST.fbTest_Flowchart_1_2</Name>
-				<Type Decoration="1025C083">Flowchart_3_4_SingleButton</Type>
+				<Type Decoration="1029D58A">Flowchart_3_4_SingleButton</Type>
 			</Parent>
 		</VarConfig>
 		<VarConfig>
@@ -1236,7 +6430,289 @@
 			<BitSize>1</BitSize>
 			<Parent>
 				<Name SubItem="AHU2_TripError">TEST.fbTest_Flowchart_1_2</Name>
-				<Type Decoration="1025C083">Flowchart_3_4_SingleButton</Type>
+				<Type Decoration="1029D58A">Flowchart_3_4_SingleButton</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Input" TaskPrio="1">TEST.fbtest.TEMPERATURE</Name>
+			<Type>INT</Type>
+			<IGroup>61472</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>16</BitSize>
+			<Parent>
+				<Name SubItem="TEMPERATURE">TEST.fbtest</Name>
+				<Type Decoration="100B331F">Flowchart_5_6</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="1">TEST.fbtest.HEATER_STAGE1</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+			<Parent>
+				<Name SubItem="HEATER_STAGE1">TEST.fbtest</Name>
+				<Type Decoration="100B331F">Flowchart_5_6</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="1">TEST.fbtest.HEATER_STAGE2</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+			<Parent>
+				<Name SubItem="HEATER_STAGE2">TEST.fbtest</Name>
+				<Type Decoration="100B331F">Flowchart_5_6</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="1">TEST.fbtest.HEATER_STAGE3</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+			<Parent>
+				<Name SubItem="HEATER_STAGE3">TEST.fbtest</Name>
+				<Type Decoration="100B331F">Flowchart_5_6</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="1">CCB_GroundFloor.AHU_CCCBG.DEV_1.AHU1_Relay</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+			<Parent>
+				<Name SubItem="AHU1_Relay">CCB_GroundFloor.AHU_CCCBG.DEV_1</Name>
+				<Type Decoration="100FBD54">AHU_INTERNAL</Type>
+			</Parent>
+			<Parent>
+				<Name SubItem="DEV_1">CCB_GroundFloor.AHU_CCCBG</Name>
+				<Type Decoration="10182127">Flowchart_1_2_CTRL</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="1">CCB_GroundFloor.AHU_CCCBG.DEV_2.AHU1_Relay</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+			<Parent>
+				<Name SubItem="AHU1_Relay">CCB_GroundFloor.AHU_CCCBG.DEV_2</Name>
+				<Type Decoration="100FBD54">AHU_INTERNAL</Type>
+			</Parent>
+			<Parent>
+				<Name SubItem="DEV_2">CCB_GroundFloor.AHU_CCCBG</Name>
+				<Type Decoration="10182127">Flowchart_1_2_CTRL</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="1">CCB_GroundFloor.AHU_CCCBG.DEV_3.AHU1_Relay</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+			<Parent>
+				<Name SubItem="AHU1_Relay">CCB_GroundFloor.AHU_CCCBG.DEV_3</Name>
+				<Type Decoration="100FBD54">AHU_INTERNAL</Type>
+			</Parent>
+			<Parent>
+				<Name SubItem="DEV_3">CCB_GroundFloor.AHU_CCCBG</Name>
+				<Type Decoration="10182127">Flowchart_1_2_CTRL</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="1">CCB_GroundFloor.EF_CCB.DEV_1.AHU1_Relay</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+			<Parent>
+				<Name SubItem="AHU1_Relay">CCB_GroundFloor.EF_CCB.DEV_1</Name>
+				<Type Decoration="100FBD54">AHU_INTERNAL</Type>
+			</Parent>
+			<Parent>
+				<Name SubItem="DEV_1">CCB_GroundFloor.EF_CCB</Name>
+				<Type Decoration="10182127">Flowchart_1_2_CTRL</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="1">CCB_GroundFloor.EF_CCB.DEV_2.AHU1_Relay</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+			<Parent>
+				<Name SubItem="AHU1_Relay">CCB_GroundFloor.EF_CCB.DEV_2</Name>
+				<Type Decoration="100FBD54">AHU_INTERNAL</Type>
+			</Parent>
+			<Parent>
+				<Name SubItem="DEV_2">CCB_GroundFloor.EF_CCB</Name>
+				<Type Decoration="10182127">Flowchart_1_2_CTRL</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="1">CCB_GroundFloor.EF_CCB.DEV_3.AHU1_Relay</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+			<Parent>
+				<Name SubItem="AHU1_Relay">CCB_GroundFloor.EF_CCB.DEV_3</Name>
+				<Type Decoration="100FBD54">AHU_INTERNAL</Type>
+			</Parent>
+			<Parent>
+				<Name SubItem="DEV_3">CCB_GroundFloor.EF_CCB</Name>
+				<Type Decoration="10182127">Flowchart_1_2_CTRL</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="1">CCB_GroundFloor.TEC_CCB.DEV1.AHU1_Relay</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+			<Parent>
+				<Name SubItem="AHU1_Relay">CCB_GroundFloor.TEC_CCB.DEV1</Name>
+				<Type Decoration="100FBD54">AHU_INTERNAL</Type>
+			</Parent>
+			<Parent>
+				<Name SubItem="DEV1">CCB_GroundFloor.TEC_CCB</Name>
+				<Type Decoration="1004E439">Flowchart_7</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.EH_CCB_01_FB.TEMPERATURE</Name>
+			<Type>INT</Type>
+			<IGroup>61472</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>16</BitSize>
+			<Parent>
+				<Name SubItem="TEMPERATURE">CCB_GroundFloor.EH_CCB_01_FB</Name>
+				<Type Decoration="100B331F">Flowchart_5_6</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="1">CCB_GroundFloor.EH_CCB_01_FB.HEATER_STAGE1</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+			<Parent>
+				<Name SubItem="HEATER_STAGE1">CCB_GroundFloor.EH_CCB_01_FB</Name>
+				<Type Decoration="100B331F">Flowchart_5_6</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="1">CCB_GroundFloor.EH_CCB_01_FB.HEATER_STAGE2</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+			<Parent>
+				<Name SubItem="HEATER_STAGE2">CCB_GroundFloor.EH_CCB_01_FB</Name>
+				<Type Decoration="100B331F">Flowchart_5_6</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="1">CCB_GroundFloor.EH_CCB_01_FB.HEATER_STAGE3</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+			<Parent>
+				<Name SubItem="HEATER_STAGE3">CCB_GroundFloor.EH_CCB_01_FB</Name>
+				<Type Decoration="100B331F">Flowchart_5_6</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Input" TaskPrio="1">CCB_GroundFloor.EH_CCB_02_FB.TEMPERATURE</Name>
+			<Type>INT</Type>
+			<IGroup>61472</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>16</BitSize>
+			<Parent>
+				<Name SubItem="TEMPERATURE">CCB_GroundFloor.EH_CCB_02_FB</Name>
+				<Type Decoration="100B331F">Flowchart_5_6</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="1">CCB_GroundFloor.EH_CCB_02_FB.HEATER_STAGE1</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+			<Parent>
+				<Name SubItem="HEATER_STAGE1">CCB_GroundFloor.EH_CCB_02_FB</Name>
+				<Type Decoration="100B331F">Flowchart_5_6</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="1">CCB_GroundFloor.EH_CCB_02_FB.HEATER_STAGE2</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+			<Parent>
+				<Name SubItem="HEATER_STAGE2">CCB_GroundFloor.EH_CCB_02_FB</Name>
+				<Type Decoration="100B331F">Flowchart_5_6</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="1">CCB_GroundFloor.EH_CCB_02_FB.HEATER_STAGE3</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+			<Parent>
+				<Name SubItem="HEATER_STAGE3">CCB_GroundFloor.EH_CCB_02_FB</Name>
+				<Type Decoration="100B331F">Flowchart_5_6</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23A_FB.DEV1.AHU1_Relay</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+			<Parent>
+				<Name SubItem="AHU1_Relay">CCB_FirstFloor.FCU_CCB1_23A_FB.DEV1</Name>
+				<Type Decoration="100FBD54">AHU_INTERNAL</Type>
+			</Parent>
+			<Parent>
+				<Name SubItem="DEV1">CCB_FirstFloor.FCU_CCB1_23A_FB</Name>
+				<Type Decoration="1004E439">Flowchart_7</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23B_FB.DEV1.AHU1_Relay</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+			<Parent>
+				<Name SubItem="AHU1_Relay">CCB_FirstFloor.FCU_CCB1_23B_FB.DEV1</Name>
+				<Type Decoration="100FBD54">AHU_INTERNAL</Type>
+			</Parent>
+			<Parent>
+				<Name SubItem="DEV1">CCB_FirstFloor.FCU_CCB1_23B_FB</Name>
+				<Type Decoration="1004E439">Flowchart_7</Type>
+			</Parent>
+		</VarConfig>
+		<VarConfig>
+			<Name Static="Output" TaskPrio="1">CCB_FirstFloor.FCU_CCB1_23C_FB.DEV1.AHU1_Relay</Name>
+			<Type>BOOL</Type>
+			<IGroup>61489</IGroup>
+			<IOffset VarConfig="Unknown">0</IOffset>
+			<BitSize>1</BitSize>
+			<Parent>
+				<Name SubItem="AHU1_Relay">CCB_FirstFloor.FCU_CCB1_23C_FB.DEV1</Name>
+				<Type Decoration="100FBD54">AHU_INTERNAL</Type>
+			</Parent>
+			<Parent>
+				<Name SubItem="DEV1">CCB_FirstFloor.FCU_CCB1_23C_FB</Name>
+				<Type Decoration="1004E439">Flowchart_7</Type>
 			</Parent>
 		</VarConfig>
 	</VarConfigs>
